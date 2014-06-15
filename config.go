@@ -36,6 +36,6 @@ func init() {
 
 func CheckFatalError(err error, msg string) {
 	if err != nil {
-		log.Fatalln(msg, err)
+		log.Panicln(msg, err)
 	}
 }
